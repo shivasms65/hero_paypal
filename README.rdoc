@@ -1,28 +1,6 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+step 1: git clone git@github.com:shivasms65/hero_paypal.git
+step 2: Do "bundle install"
+step 3: rake db:create; rake db:migrate
+step 4: (optional) change "config/paypal.yml" file for your purpose
+step 5: Click and process the checkout button
+Note: Payment table will handle the profile_id created by recurring profile for current_user(logged in user), Based on profile id we can suspend, reactivate or cancel the subscription

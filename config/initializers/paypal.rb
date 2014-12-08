@@ -1,6 +1,6 @@
 require "paypal/recurring"
 
-p paypal_info = YAML.load_file("config/paypal.yml")[Rails.env]
+paypal_info = YAML.load_file("config/paypal.yml")[Rails.env]
 
 PayPal::Recurring.configure do |config|
   config.sandbox = true
