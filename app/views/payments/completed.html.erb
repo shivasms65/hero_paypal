@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>JW Player-HLS Adaptive</title>
+  <script src="http://jwpsrv.com/library/AcswGg5eEeSEFyIACtqXBA.js"></script>
+</head>
+<body style="background: #333;">
+<div id="playerContainer">We are loading the Player</div>
+<script type="text/javascript">
+    jwplayer("playerContainer").setup({
+        image: "http://d382j8j5g7zlk1.cloudfront.net/images/overlays/Madras.png",
+        file: "http://dn4uhxtx5uwq5.cloudfront.net/madras_v1/index.m3u8",
+        tracks: [
+            { file: 'http://s3-ap-southeast-1.amazonaws.com/ht-tamil-movies-v1/madras_v1/madras_v1.vtt', kind: 'captions', label: "English" },
+        ],
+        width: 930,
+        height: 523,
+        skin: "five",
+        cast:{
+            appid:"4E28EE1C",
+            loadscreen:"http://d382j8j5g7zlk1.cloudfront.net/images/overlays/Madras.png",
+            endscreen:"http://d382j8j5g7zlk1.cloudfront.net/images/overlays/Madras.png",
+            logo:"https://s3-ap-southeast-1.amazonaws.com/herotalkies-assets/images/logo.png",
+            railcolor:"#f14833"
+        }
+    });
+</script>
+</body>
+</html>
